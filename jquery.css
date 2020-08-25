@@ -1,0 +1,24 @@
+#container{
+    width: 600px;
+}
+
+.header{
+    border-bottom: 2px solid black;
+    padding: 20px;
+}
+.header17{
+    padding: 20px;
+}
+h1{
+    text-align: center;
+}
+p{
+    display: inline;
+    padding-left: 30px;
+}
+#slidedowntext{
+    display: block;
+}
+#dog{
+    width: 100px;
+}

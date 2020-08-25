@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="jquery.css"></link>
+    <title>My jQuery basic assignment</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('#button1').click(function(){
+                alert('Well, hello there!');
+            })
+            $('#button2').click(function(){
+                $('#p2').hide();
+            })
+            $('#button3').click(function(){
+                $('#p2').show();
+            })
+            $('#button4').click(function(){
+                $('#p4').toggle();
+            })
+            $('#button5').click(function(){
+                $('#slidedowntext').slideUp();
+            })
+            $('#button6').click(function(){
+                $('#slidedowntext').slideDown();
+            })
+            $('#button7').click(function(){
+                $('#slidedowntext').slideToggle();
+            })
+            $('#button8').click(function(){
+                $('#fadetext').fadeOut();
+            })
+            $('#button9').click(function(){
+                $('#fadetext').fadeIn();
+            })
+            $('#button10').click(function(){
+                $('#addclass').addClass("bigpurple");
+            })
+            $('#button11').click(function(){
+                $('#p11').before("Howdy!");
+            })
+            $('#button12').click(function(){
+                $('#p12').after("Now I'm down here!");
+            })
+            $('#button13').click(function(){
+                $('#p13').append("<p>This is a new paragraph</p>");
+            })
+            $('#button14').click(function(){
+                $('#p14').html("How about some new text?");
+            })
+            $('#button15').click(function(){
+                $('#dog').attr("height", "50");
+            })
+            $('#button16').click(function(){
+                $('#entry').val("Val Kilmer");
+            })
+            $('#button17').click(function(){
+                $('#p17').text("Hello World!");
+            })
+        })
+    </script>
+    <style>
+        .bigpurple{
+            font-size: 150%;
+            color: purple;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="header"><h1>Click</h1>
+            <button id="button1">Click</button>
+            <p>Click the button to show a Hello message.</p>
+        </div>
+        <div class="header"><h1>Hide</h1>
+            <button id="button2">Hide</button>
+            <p id="p2">Click the button to hide the text description</p>
+        </div>
+        <div class="header"><h1>Show</h1>
+            <button id="button3">Show</button>
+            <p>Click the button to show the previous paragraph</p>
+        </div>
+        <div class="header"><h1>Toggle</h1>
+            <button id="button4">Toggle</button>
+            <p id="p4">Click the button to toggle the current paragraph</p>
+        </div>
+        <div class="header"><h1>Slide Up</h1>
+            <button id="button5">Slide Up</button>
+            <p id="p5">Click the button to slide the button up!</p>
+            <p id="slidedowntext">Test text for the next three buttons!</p>
+        </div>
+        <div class="header"><h1>Slide Down</h1>
+            <button id="button6">Slide Down</button>
+            <p>Click the button to slide the button down!</p>
+        </div>
+        <div class="header"><h1>Slide Toggle</h1>
+            <button id="button7">Slide Toggle</button>
+            <p>Click the button to toggle the test text above!</p>
+        </div>
+        <div class="header"><h1>Fade Out</h1>
+            <button id="button8">Fade Out</button>
+            <p id="fadetext">Click the button to Fade text out</p>
+        </div>
+        <div class="header"><h1>Fade In</h1>
+            <button id="button9">Fade In</button>
+            <p>Click this button to make the text above fade back in</p>
+        </div>
+        <div class="header"><h1>Add Class</h1>
+            <button id="button10">Add Class</button>
+            <p id="addclass">Click to apply a class tag to this text.</p>
+        </div>
+        <div class="header"><h1>Before</h1>
+            <button id="button11">Before</button>
+            <p id="p11">Click the button to apply text before this text.</p>
+        </div>
+        <div class="header"><h1>After</h1>
+            <button id="button12">After</button>
+            <p id="p12">Click the button to apply text afer this text.</p>
+        </div>
+        <div class="header"><h1>Append</h1>
+            <button id="button13">Append</button>
+            <p id="p13">Click the button to append a new paragraph</p>
+        </div>
+        <div class="header"><h1>Html</h1>
+            <button id="button14">HTML</button>
+            <p id="p14">Click the button to set HTML content.</p>
+        </div>
+        <div class="header"><h1>Attr</h1>
+            <button id="button15">Attr</button>
+            <p>Click the button to apply a different attribute to the image</p>
+            <img id="dog" src="dog.jpg" alt="dog.jpg">
+        </div>
+        <div class="header"><h1>Val</h1>
+            <button id="button16">Val</button>
+            <p>Click the button to set a new value in the text box</p>
+            <p>Name:<input id="entry" type="text" name="user"></p>
+        </div>
+        <div class="header17"><h1>Text</h1>
+            <button id="button17">Text</button>
+            <p id="p17">Click the button to set new text over this.</p>
+        </div>
+    </div>
+</body>
+</html>
